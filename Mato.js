@@ -31,13 +31,13 @@ function Mato() {
 
 
   this.takasin = function() {
-    if (this.x > width) {
+    if (this.x > 900) {
       this.resetoi();
-    }else if (this.y > height) {
+    }else if (this.y > 900) {
       this.resetoi();
-    }else if (this.x < width) {
+    }else if (this.x < 0) {
       this.resetoi();
-    }else if (this.y < height) {
+    }else if (this.y < 0) {
       this.resetoi();
     }
   }
