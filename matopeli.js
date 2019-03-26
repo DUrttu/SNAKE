@@ -14,8 +14,8 @@ function setup() {
   frameRate(10);
   r = new Ruoka();
   m.madonpaikka();
-  kuva = loadImage('Imported piskel (1).png');
-  kuva2 = loadImage('multa1.png')
+  kuva = loadImage('https://raw.githubusercontent.com/DUrttu/SNAKE/gh-pages/Imported%20piskel%20(1).png');
+  //kuva2 = loadImage('')
 }
 
 function draw() {
