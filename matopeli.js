@@ -14,13 +14,12 @@ function setup() {
   frameRate(10);
   r = new Ruoka();
   m.madonpaikka();
-  kuva = loadImage('https://raw.githubusercontent.com/DUrttu/matopeli/master/Imported%20piskel.png');
-  kuva2 = loadImage('https://raw.githubusercontent.com/DUrttu/matopeli/master/mato%20(2).jpg')
-  kuva3 = loadImage('https://raw.githubusercontent.com/DUrttu/matopeli/master/Imported%20piskel%20(1).png')
+  kuva = loadImage('Imported piskel (1).png');
+  kuva2 = loadImage('multa1.png')
 }
 
 function draw() {
-  background(51);
+  background(kuva);
   m.show();
   m.update();
   m.takasin();
