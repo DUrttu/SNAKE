@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background(kuva3);
+  background(51);
   m.show();
   m.update();
   m.takasin();
