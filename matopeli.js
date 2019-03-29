@@ -15,7 +15,7 @@ let hg;
 let äö;
 
 function preload() {
-  //fontti = loadFont('')
+  fontti = loadFont('Antreas.ttf')
 }
 
 function setup() {
@@ -27,8 +27,8 @@ function setup() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
-  kuva2 = loadImage('https://raw.githubusercontent.com/DUrttu/SNAKE/gh-pages/matopeli%20tausta.png')
-  kuva = loadImage('https://raw.githubusercontent.com/DUrttu/SNAKE/gh-pages/Imported%20piskel%20(2).png')
+  kuva2 = loadImage('matopeli tausta coming soon.png')
+  kuva = loadImage('Imported piskel (2).png')
   hg = 0
 }
 
@@ -41,7 +41,7 @@ function draw() {
   r.syö();
   m.kuoli();
   textAlign(CENTER)
-  //textFont(fontti)
+  textFont(fontti)
   textSize(60);
   text(äö, 655, 170, 204);
   text(hg, 655, 380, 204);
