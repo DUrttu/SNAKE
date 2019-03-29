@@ -3,8 +3,8 @@ function Ruoka() {
   this.y = j;
 
   this.uusi = function() {
-    f = Math.floor(Math.random() * 30) * 30;
-    j = Math.floor(Math.random() * 30) * 30;
+    f = Math.floor(Math.random() * 15) * grid + 200;
+    j = Math.floor(Math.random() * 15) * grid + 76;
   }
 
   this.syö = function() {
@@ -15,8 +15,8 @@ function Ruoka() {
   }
 
 
-  var f = Math.floor(Math.random() * 30) * 30;
-  var j = Math.floor(Math.random() * 30) * 30;
+  var f = Math.floor(Math.random() * 15) * grid + 200;
+  var j = Math.floor(Math.random() * 15) * grid + 76;
 
   this.show = function() {
     fill(200, 0, 0);

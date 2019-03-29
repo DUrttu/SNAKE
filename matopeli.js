@@ -2,34 +2,49 @@ var m;
 var grid = 30;
 var r;
 var nappi;
+var leveys = 200 + 850;
+var korkeus = 76 + 550;
 
 let kuva;
 let kuva2;
+let kuva3;
+let fontti;
 
-let äö
+let hg;
+
+let äö;
+
+function preload() {
+  //fontti = loadFont('')
+}
 
 function setup() {
-  createCanvas(900, 900);
+  var cnv = createCanvas(850, 550);
   m = new Mato();
-  frameRate(10);
+  frameRate(9);
   r = new Ruoka();
   m.madonpaikka();
-  kuva = loadImage('https://raw.githubusercontent.com/DUrttu/SNAKE/gh-pages/Imported%20piskel%20(1).png');
-  //kuva2 = loadImage('')
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+  kuva2 = loadImage('https://raw.githubusercontent.com/DUrttu/SNAKE/gh-pages/matopeli%20tausta.png')
+  kuva = loadImage('https://raw.githubusercontent.com/DUrttu/SNAKE/gh-pages/Imported%20piskel%20(2).png')
+  hg = 0
 }
 
 function draw() {
-  background(kuva);
+  background(kuva2);
   m.show();
   m.update();
   m.takasin();
   r.show();
   r.syö();
   m.kuoli();
-  //textSize(30)
-  //text('Score', 100, 100);
-  nappi = createButton('Score ' + (äö));
-  nappi.position(930, 60);
+  textAlign(CENTER)
+  //textFont(fontti)
+  textSize(60);
+  text(äö, 655, 170, 204);
+  text(hg, 655, 380, 204);
 }
 
 

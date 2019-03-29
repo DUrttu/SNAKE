@@ -7,8 +7,8 @@ function Mato() {
   this.total = 0;
 
   this.madonpaikka = function() {
-    this.x = Math.floor(Math.random() * 30) * 30;
-    this.y = Math.floor(Math.random() * 30) * 30;
+    this.x = Math.floor(Math.random() * 15) * 30 + 200;
+    this.y = Math.floor(Math.random() * 15) * 30 + 76;
   }
 
   this.kuoli = function() {
@@ -26,18 +26,21 @@ function Mato() {
     this.xspeed = 0;
     this.yspeed = 0;
     this.madonpaikka();
+    if (äö > hg ) {
+      hg = äö;
+    }
   }
 
 
 
   this.takasin = function() {
-    if (this.x > 900) {
+    if (this.x > 649) {
       this.resetoi();
-    }else if (this.y > 900) {
+    }else if (this.y > 525) {
       this.resetoi();
-    }else if (this.x < 0) {
+    }else if (this.x < 200) {
       this.resetoi();
-    }else if (this.y < 0) {
+    }else if (this.y < 76) {
       this.resetoi();
     }
   }
