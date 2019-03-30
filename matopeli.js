@@ -8,6 +8,7 @@ var korkeus = 76 + 550;
 let kuva;
 let kuva2;
 let kuva3;
+let omena;
 let fontti;
 
 let hg;
@@ -29,6 +30,7 @@ function setup() {
   cnv.position(x, y);
   kuva2 = loadImage('matopeli tausta coming soon.png')
   kuva = loadImage('Imported piskel (2).png')
+  omena = loadImage('omena paras.png');
   hg = 0
 }
 
