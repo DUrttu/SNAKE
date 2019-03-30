@@ -42,6 +42,7 @@ function draw() {
   r.show();
   r.syö();
   m.kuoli();
+  this.teksti();
 }
 
 function teksti() {
