@@ -42,14 +42,16 @@ function draw() {
   r.show();
   r.syö();
   m.kuoli();
-  textAlign(CENTER)
+}
+
+function teksti() {
   textFont(fontti)
-  textSize(60);
   fill(204, 0, 0)
+  textAlign(CENTER);
+  textSize(60);
   text(äö, 655, 170, 204);
   text(hg, 655, 380, 204);
 }
-
 
 function keyPressed() {
   if (keyCode === UP_ARROW && m.yspeed !== 1) {
