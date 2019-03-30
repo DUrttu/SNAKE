@@ -21,6 +21,6 @@ function Ruoka() {
   this.show = function() {
     //fill(200, 0, 0);
     //rect(f, j, grid, grid,);
-    image(omena paras.png, f, j, grid, grid);
+    image(omena, f, j, grid, grid);
   }
 }
