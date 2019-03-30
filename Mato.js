@@ -45,7 +45,6 @@ function Mato() {
     }
   }
 
-  var g = Math.floor(Math.random() * 130) + 125;
 
 
 
