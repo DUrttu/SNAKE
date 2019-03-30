@@ -45,6 +45,7 @@ function draw() {
   textAlign(CENTER)
   textFont(fontti)
   textSize(60);
+  fill(204)
   text(äö, 655, 170, 204);
   text(hg, 655, 380, 204);
 }
