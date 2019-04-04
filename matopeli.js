@@ -22,7 +22,7 @@ function preload() {
 function setup() {
   var cnv = createCanvas(850, 550);
   m = new Mato();
-  frameRate(9);
+  frameRate(8);
   r = new Ruoka();
   m.madonpaikka();
   var x = (windowWidth - width) / 2;
