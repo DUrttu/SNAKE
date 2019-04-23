@@ -20,7 +20,6 @@ function Ruoka() {
       if (d < 1) {
         this.uusi();
       }
-
     }
   }
 
