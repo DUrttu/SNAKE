@@ -41,8 +41,8 @@ function draw() {
   m.takasin();
   r.show();
   r.syö();
-  r.vääräpaikka();
   m.kuoli();
+  r.vääräpaikka();
   this.teksti();
 }
 
