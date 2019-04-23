@@ -13,6 +13,16 @@ function Ruoka() {
       m.total++;
     }
   }
+  
+  this.vääräpaikka = function() {
+    for (var i = 0; i < m.häntä.length; i++) {
+      var d = dist(f, j, m.häntä[i].x, m.häntä[i].y);
+      if (d < 1) {
+        this.uusi();
+      }
+
+    }
+  }
 
 
   var f = Math.floor(Math.random() * 15) * grid + 200;
