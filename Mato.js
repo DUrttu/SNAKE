@@ -34,16 +34,18 @@ function Mato() {
 
 
   this.takasin = function() {
-    if (this.x > 650) {
-      this.x = 200 
-    }else if (this.y = 525) {
-      this.y = 76
-    }else if (this.x < 200) {
-      this.x = 649
-    }else if (this.y = 76) {
-      this.y = 525
+    if (this.x > 649) {
+      this.resetoi()
+    }else if (this.y > 525) {
+      this.resetoi()
+    }else if (this.x < 201) {
+      this.resetoi()
+    }else if (this.y > 76) {
+      this.resetoi()
     }
   }
+  
+ 
 
 
 
