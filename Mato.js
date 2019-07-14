@@ -38,7 +38,7 @@ function Mato() {
       this.resetoi()
     }else if (this.y > 525) {
       this.resetoi()
-    }else if (this.x < 201) {
+    }else if (this.x < 200) {
       this.resetoi()
     }else if (this.y > 76) {
       this.resetoi()
