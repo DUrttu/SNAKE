@@ -40,7 +40,7 @@ function Mato() {
       this.resetoi()
     }else if (this.x < 200) {
       this.resetoi()
-    }else if (this.y > 76) {
+    }else if (this.y < 76) {
       this.resetoi()
     }
   }
