@@ -64,5 +64,13 @@ function keyPressed() {
     m.dir(-1, 0);
   }else if (keyCode === RIGHT_ARROW && m.xspeed !== -1){
     m.dir(1, 0);
+  }if (keyCode === "W" && m.yspeed !== 1) {
+    m.dir(0, -1);
+  }else if (keyCode === "S" && m.yspeed !== -1){
+    m.dir(0, 1);
+  }else if (keyCode === "A" && m.xspeed !== 1){
+    m.dir(-1, 0);
+  }else if (keyCode === "D" && m.xspeed !== -1){
+    m.dir(1, 0);
   }
 }
