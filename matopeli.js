@@ -60,9 +60,9 @@ function keyPressed() {
     m.dir(0, -1);
   }else if (keyCode === DOWN_ARROW && m.yspeed !== -1 || keyCode === 83 && m.yspeed !== -1){
     m.dir(0, 1);
-  }else if (keyCode === LEFT_ARROW && m.xspeed !== 1 || keyCode === 65 && m.yspeed !== 1){
+  }else if (keyCode === LEFT_ARROW && m.xspeed !== 1 || keyCode === 65 && m.xspeed !== 1){
     m.dir(-1, 0);
-  }else if (keyCode === RIGHT_ARROW && m.xspeed !== -1 || keyCode === 68 && m.yspeed !== -1){
+  }else if (keyCode === RIGHT_ARROW && m.xspeed !== -1 || keyCode === 68 && m.xspeed !== -1){
     m.dir(1, 0);
   }
 }
